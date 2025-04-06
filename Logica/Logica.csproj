@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D177A327-6568-4D1D-879E-2E8938A42CA1}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Logica</RootNamespace>
+    <AssemblyName>Logica</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="fmDadosUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fmDadosUsuario.Designer.cs">
+      <DependentUpon>fmDadosUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCalcular2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCalcular2.Designer.cs">
+      <DependentUpon>frmCalcular2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCalculo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCalculo.Designer.cs">
+      <DependentUpon>frmCalculo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmFormulario1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFormulario1.Designer.cs">
+      <DependentUpon>frmFormulario1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmFormulario2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFormulario2.Designer.cs">
+      <DependentUpon>frmFormulario2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMetodo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMetodo.Designer.cs">
+      <DependentUpon>frmMetodo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMetodo1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMetodo1.Designer.cs">
+      <DependentUpon>frmMetodo1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMetodo2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMetodo2.Designer.cs">
+      <DependentUpon>frmMetodo2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMetodoMedia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMetodoMedia.Designer.cs">
+      <DependentUpon>frmMetodoMedia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmOperador1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOperador1.Designer.cs">
+      <DependentUpon>frmOperador1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmOperador2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOperador2.Designer.cs">
+      <DependentUpon>frmOperador2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmOperador3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOperador3.Designer.cs">
+      <DependentUpon>frmOperador3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmOperador4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOperador4.Designer.cs">
+      <DependentUpon>frmOperador4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmOperador5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOperador5.Designer.cs">
+      <DependentUpon>frmOperador5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmOperador6.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOperador6.Designer.cs">
+      <DependentUpon>frmOperador6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="fmDadosUsuario.resx">
+      <DependentUpon>fmDadosUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCalcular2.resx">
+      <DependentUpon>frmCalcular2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCalculo.resx">
+      <DependentUpon>frmCalculo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFormulario1.resx">
+      <DependentUpon>frmFormulario1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFormulario2.resx">
+      <DependentUpon>frmFormulario2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMetodo.resx">
+      <DependentUpon>frmMetodo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMetodo1.resx">
+      <DependentUpon>frmMetodo1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMetodo2.resx">
+      <DependentUpon>frmMetodo2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMetodoMedia.resx">
+      <DependentUpon>frmMetodoMedia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOperador1.resx">
+      <DependentUpon>frmOperador1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOperador2.resx">
+      <DependentUpon>frmOperador2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOperador3.resx">
+      <DependentUpon>frmOperador3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOperador4.resx">
+      <DependentUpon>frmOperador4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOperador5.resx">
+      <DependentUpon>frmOperador5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOperador6.resx">
+      <DependentUpon>frmOperador6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\magro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\muito_obeso.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\obeso.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\peso_ideal.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
