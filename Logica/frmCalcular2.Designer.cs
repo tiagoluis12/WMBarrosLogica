@@ -107,6 +107,7 @@
             this.label13 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.btnLimparCampos = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // txtTotalLucroAno
@@ -172,7 +173,7 @@
             // btnCalcular
             // 
             this.btnCalcular.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCalcular.Location = new System.Drawing.Point(317, 473);
+            this.btnCalcular.Location = new System.Drawing.Point(710, 250);
             this.btnCalcular.Name = "btnCalcular";
             this.btnCalcular.Size = new System.Drawing.Size(117, 40);
             this.btnCalcular.TabIndex = 117;
@@ -876,12 +877,24 @@
             this.label1.TabIndex = 45;
             this.label1.Text = "Ganhos do mes Jan: ";
             // 
+            // btnLimparCampos
+            // 
+            this.btnLimparCampos.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLimparCampos.Location = new System.Drawing.Point(676, 301);
+            this.btnLimparCampos.Name = "btnLimparCampos";
+            this.btnLimparCampos.Size = new System.Drawing.Size(182, 40);
+            this.btnLimparCampos.TabIndex = 124;
+            this.btnLimparCampos.Text = "Limpar Campos";
+            this.btnLimparCampos.UseVisualStyleBackColor = true;
+            this.btnLimparCampos.Click += new System.EventHandler(this.btnLimparCampos_Click_1);
+            // 
             // frmCalcular2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Olive;
             this.ClientSize = new System.Drawing.Size(869, 543);
+            this.Controls.Add(this.btnLimparCampos);
             this.Controls.Add(this.txtTotalLucroAno);
             this.Controls.Add(this.label39);
             this.Controls.Add(this.txtTotalGastosAno);
@@ -1049,5 +1062,6 @@
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnLimparCampos;
     }
 }

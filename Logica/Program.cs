@@ -16,7 +16,7 @@ namespace Logica
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmMetodo1());
+            Application.Run(new frmQuestionario());
         }
     }
 }

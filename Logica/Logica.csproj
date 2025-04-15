@@ -64,6 +64,18 @@
     <Compile Include="frmCalculo.Designer.cs">
       <DependentUpon>frmCalculo.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmEnum1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEnum1.Designer.cs">
+      <DependentUpon>frmEnum1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEnumExemplo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEnumExemplo.Designer.cs">
+      <DependentUpon>frmEnumExemplo.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmFormulario1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -93,6 +105,18 @@
     </Compile>
     <Compile Include="frmMetodo2.Designer.cs">
       <DependentUpon>frmMetodo2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMetodo3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMetodo3.Designer.cs">
+      <DependentUpon>frmMetodo3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMetodo4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMetodo4.Designer.cs">
+      <DependentUpon>frmMetodo4.cs</DependentUpon>
     </Compile>
     <Compile Include="frmMetodoMedia.cs">
       <SubType>Form</SubType>
@@ -136,6 +160,12 @@
     <Compile Include="frmOperador6.Designer.cs">
       <DependentUpon>frmOperador6.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmQuestionario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmQuestionario.Designer.cs">
+      <DependentUpon>frmQuestionario.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="fmDadosUsuario.resx">
@@ -146,6 +176,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmCalculo.resx">
       <DependentUpon>frmCalculo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEnum1.resx">
+      <DependentUpon>frmEnum1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEnumExemplo.resx">
+      <DependentUpon>frmEnumExemplo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmFormulario1.resx">
       <DependentUpon>frmFormulario1.cs</DependentUpon>
@@ -161,6 +197,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmMetodo2.resx">
       <DependentUpon>frmMetodo2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMetodo3.resx">
+      <DependentUpon>frmMetodo3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMetodo4.resx">
+      <DependentUpon>frmMetodo4.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmMetodoMedia.resx">
       <DependentUpon>frmMetodoMedia.cs</DependentUpon>
@@ -182,6 +224,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmOperador6.resx">
       <DependentUpon>frmOperador6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmQuestionario.resx">
+      <DependentUpon>frmQuestionario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

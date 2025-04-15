@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -76,18 +77,18 @@ namespace Logica
                 lucroDez = ganhosDez - gastosDez;
 
                 // 
-                txtLucroJan.Text = Convert.ToString(lucroJan);
-                txtLucroFev.Text = Convert.ToString(lucroFev);
-                txtLucroMar.Text = Convert.ToString(lucroMar);
-                txtLucroAbr.Text = Convert.ToString(lucroAbr);
-                txtLucroMai.Text = Convert.ToString(lucroMai);
-                txtLucroJun.Text = Convert.ToString(lucroJun);
-                txtLucroJul.Text = Convert.ToString(lucroJul);
-                txtLucroAgo.Text = Convert.ToString(lucroAgo);
-                txtLucroSet.Text = Convert.ToString(lucroSet);
-                txtLucroOut.Text = Convert.ToString(lucroOut);
-                txtLucroNov.Text = Convert.ToString(lucroNov);
-                txtLucroDez.Text = Convert.ToString(lucroDez);
+                txtLucroJan.Text = lucroJan.ToString("C", new CultureInfo("pt-BR"));
+                txtLucroFev.Text = lucroFev.ToString("C", new CultureInfo("pt-BR"));
+                txtLucroMar.Text = lucroMar.ToString("C", new CultureInfo("pt-BR"));
+                txtLucroAbr.Text = lucroAbr.ToString("C", new CultureInfo("pt-BR"));
+                txtLucroMai.Text = lucroMai.ToString("C", new CultureInfo("pt-BR"));
+                txtLucroJun.Text = lucroJun.ToString("C", new CultureInfo("pt-BR"));
+                txtLucroJul.Text = lucroJul.ToString("C", new CultureInfo("pt-BR"));
+                txtLucroAgo.Text = lucroAgo.ToString("C", new CultureInfo("pt-BR"));
+                txtLucroSet.Text = lucroSet.ToString("C", new CultureInfo("pt-BR"));
+                txtLucroOut.Text = lucroOut.ToString("C", new CultureInfo("pt-BR"));
+                txtLucroNov.Text = lucroNov.ToString("C", new CultureInfo("pt-BR"));
+                txtLucroDez.Text = lucroDez.ToString("C", new CultureInfo("pt-BR"));
 
                 TotalGanhosAno = CalcularGanhos(ganhosJan, ganhosFev, ganhosMar, ganhosAbr, ganhosMai, ganhosJun,
                     ganhosJul, ganhosAgo, ganhosSet, ganhosOut, ganhosNov, ganhosDez);
@@ -98,9 +99,9 @@ namespace Logica
                 totalLucroAno = CalcularLucro(lucroJan, lucroFev, lucroMar, lucroAbr, lucroMai, lucroJun, lucroJul, lucroAgo, lucroSet, lucroOut,
                      lucroNov, lucroDez);
 
-                txtTotalGanhosAno.Text = Convert.ToString(TotalGanhosAno);
-                txtTotalGastosAno.Text = Convert.ToString(TotalGastosAno);
-                txtTotalLucroAno.Text = Convert.ToString(totalLucroAno);
+                txtTotalGanhosAno.Text = TotalGanhosAno.ToString("C", new CultureInfo("pt-BR"));
+                txtTotalGastosAno.Text = TotalGastosAno.ToString("C", new CultureInfo("pt-BR"));
+                txtTotalLucroAno.Text = totalLucroAno.ToString("C", new CultureInfo("pt-BR"));
             }
         }
 
@@ -160,6 +161,27 @@ namespace Logica
             TotalLucroAno = (lucroJan + lucroFev + lucroMar + lucroAbr + lucroMai + lucroJun + lucroJul + lucroAgo + lucroSet + lucroOut + lucroNov + lucroDez);
 
             return TotalLucroAno;
+        }
+
+        private void btnLimparCampos_Click_1(object sender, EventArgs e)
+        {
+            LimparCampo();
+        }
+
+        private void LimparCampo()
+        {
+            txtGanhosJan.Clear(); txtGanhosFev.Clear(); txtGanhosMar.Clear(); txtGanhosAbr.Clear(); txtGanhosMai.Clear(); txtGanhosJun.Clear();
+            txtGanhosJul.Clear(); txtGanhosAgo.Clear(); txtGanhosSet.Clear(); txtGanhosOut.Clear(); txtGanhosNov.Clear(); txtGanhosDez.Clear();
+
+            txtGastosJan.Clear(); txtGastosFev.Clear(); txtGastosMar.Clear(); txtGastosAbr.Clear(); txtGastosMai.Clear(); txtGastosJun.Clear();
+            txtGastosJul.Clear(); txtGastosAgo.Clear(); txtGastosSet.Clear(); txtGastosOut.Clear(); txtGastosNov.Clear(); txtGastosDez.Clear();
+
+            txtLucroJan.Clear(); txtLucroFev.Clear(); txtLucroMar.Clear(); txtLucroAbr.Clear(); txtLucroMai.Clear(); txtLucroJun.Clear(); txtLucroJul.Clear();
+            txtLucroAgo.Clear(); txtLucroSet.Clear(); txtLucroOut.Clear(); txtLucroNov.Clear(); txtLucroDez.Clear();
+
+            txtTotalGanhosAno.Clear();
+            txtTotalGastosAno.Clear();
+            txtTotalLucroAno.Clear();
         }
     }
 }
